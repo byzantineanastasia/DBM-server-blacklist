@@ -1,0 +1,31 @@
+{
+  "name": "blacklist",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "NfKXK",
+  "actions": [
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "list object",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "3",
+      "varName": "black(list)",
+      "addType": "1",
+      "position": "",
+      "value": "tempVars(\"list object\")",
+      "name": "Add Item to List"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${tempVars(\"list object\")} has been blacklisted, the bot will no \nlonger be able to join that server!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ]
+}

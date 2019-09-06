@@ -1,0 +1,21 @@
+{
+  "name": "SPblacklist",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "nvUUJ",
+  "actions": [
+    {
+      "storage": "3",
+      "varName": "black(list)",
+      "name": "Create List"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "blacklist has been set up!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ]
+}

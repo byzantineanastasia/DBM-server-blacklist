@@ -1,6 +1,6 @@
 {
   "name": "SPblacklist",
-  "permissions": "NONE",
+  "permissions": "ADMINISTRATOR",
   "restriction": "0",
   "_id": "nvUUJ",
   "actions": [

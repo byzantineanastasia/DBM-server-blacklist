@@ -1,6 +1,6 @@
 {
   "name": "blacklist",
-  "permissions": "NONE",
+  "permissions": "ADMINISTRATOR",
   "restriction": "0",
   "_id": "NfKXK",
   "actions": [

@@ -1,0 +1,16 @@
+{
+  "name": "Blist",
+  "permissions": "MANAGE_GUILD",
+  "restriction": "0",
+  "_id": "GxIho",
+  "actions": [
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${globalVars(\"black(list)\")}",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ]
+}

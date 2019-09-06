@@ -1,0 +1,47 @@
+{
+  "name": "blacklist",
+  "temp": "",
+  "event-type": "4",
+  "_id": "aNWIT",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "name",
+      "name": "Store Server Info"
+    },
+    {
+      "storage": "3",
+      "varName": "black(list)",
+      "comparison": "5",
+      "value": "tempVars(\"name\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "channel": "4",
+      "varName": "",
+      "message": "im not allowed in your server",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "info": "1",
+      "find": "${tempVars(\"name\")}",
+      "storage": "1",
+      "varName": "server",
+      "name": "Find Server"
+    },
+    {
+      "server": "1",
+      "varName": "server",
+      "name": "Leave Server"
+    }
+  ]
+}

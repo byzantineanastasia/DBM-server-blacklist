@@ -1,11 +1,11 @@
 {
   "name": "blacklist",
   "permissions": "ADMINISTRATOR",
-  "restriction": "0",
+  "restriction": "4",
   "_id": "NfKXK",
   "actions": [
     {
-      "info": "1",
+      "info": "0",
       "infoIndex": "1",
       "storage": "1",
       "varName": "list object",
@@ -22,10 +22,17 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "${tempVars(\"list object\")} has been blacklisted, the bot will no \nlonger be able to join that server!",
+      "message": "${tempVars(\"server\")} has been blacklisted, the bot will no \nlonger be able to join that server!",
       "storage": "0",
       "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
       "name": "Send Message"
+    },
+    {
+      "storage": "3",
+      "varName": "black(list)",
+      "name": "Save Variable"
     }
   ]
 }

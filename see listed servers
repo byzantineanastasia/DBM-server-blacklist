@@ -1,13 +1,18 @@
 {
-  "name": "Blist",
-  "permissions": "MANAGE_GUILD",
+  "name": "SPblacklist",
+  "permissions": "ADMINISTRATOR",
   "restriction": "0",
-  "_id": "GxIho",
+  "_id": "nvUUJ",
   "actions": [
+    {
+      "storage": "3",
+      "varName": "black(list)",
+      "name": "Create List"
+    },
     {
       "channel": "0",
       "varName": "",
-      "message": "${globalVars(\"black(list)\")}",
+      "message": "blacklist has been set up!",
       "storage": "0",
       "varName2": "",
       "name": "Send Message"

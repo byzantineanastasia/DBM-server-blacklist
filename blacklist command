@@ -8,7 +8,14 @@
       "info": "0",
       "infoIndex": "1",
       "storage": "1",
-      "varName": "list object",
+      "varName": "object id",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "object name",
       "name": "Store Command Params"
     },
     {
@@ -16,13 +23,21 @@
       "varName": "black(list)",
       "addType": "1",
       "position": "",
-      "value": "tempVars(\"list object\")",
+      "value": "tempVars(\"object id\")",
+      "name": "Add Item to List"
+    },
+    {
+      "storage": "3",
+      "varName": "black(list)",
+      "addType": "0",
+      "position": "",
+      "value": "tempVars(\"object name\")",
       "name": "Add Item to List"
     },
     {
       "channel": "0",
       "varName": "",
-      "message": "${tempVars(\"server\")} has been blacklisted, the bot will no \nlonger be able to join that server!",
+      "message": "${tempVars(\"object name\")} has been blacklisted, the bot will no \nlonger be able to join that server!",
       "storage": "0",
       "varName2": "",
       "iffalse": "0",
@@ -33,6 +48,10 @@
       "storage": "3",
       "varName": "black(list)",
       "name": "Save Variable"
+    },
+    {
+      "storage": "3",
+      "varName": "blacklist server name",
+      "name": "Save Variable"
     }
   ]
-}

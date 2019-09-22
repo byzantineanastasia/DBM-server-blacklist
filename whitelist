@@ -1,0 +1,42 @@
+{
+  "name": "whitelist",
+  "permissions": "NONE",
+  "restriction": "4",
+  "_id": "OGLjY",
+  "actions": [
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "object",
+      "name": "Store Command Params"
+    },
+    {
+      "list": "9",
+      "varName": "black(list)",
+      "item": "${tempVars(\"object\")}",
+      "storage": "1",
+      "varName2": "object position",
+      "name": "Find Item in List"
+    },
+    {
+      "storage": "3",
+      "varName": "black(list)",
+      "removeType": "2",
+      "position": "${tempVars(\"object position\")}",
+      "storage2": "0",
+      "varName2": "",
+      "name": "Remove Item from List"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${tempVars(\"object\")} has been white listed. bot can now join server",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    }
+  ]
+}
